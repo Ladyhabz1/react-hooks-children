@@ -1,5 +1,14 @@
 import React from "react";
 
+function ChildComponent() {
+  return (
+    <>
+      <p>Hey, I am a child</p>
+      <p>My name is ChildComponent</p>
+    </>
+  );
+}
+
 function Container({
   header,
   children,
@@ -18,4 +27,5 @@ function Container({
   );
 }
 
+export { ChildComponent };
 export default Container;
